@@ -3,3 +3,34 @@
 @import "fonts";
 
 // @import "media";
+.header {
+    height: 80px;
+    border-bottom: 1px solid #d9d9d9;
+    ;
+}
+
+.header__nav {
+    padding-top: 35px;
+}
+
+.header__list {
+    display: flex;
+    justify-content: center;
+
+    margin-left: -75px;
+}
+
+.header__list-item {
+    margin-left: 75px;
+}
+
+.header__list-link {
+    font-size: 14px;
+    font-weight: 300;
+    color: $blue;
+    line-height: normal;
+
+    &._active {
+        color: $main-bl;
+    }
+}
