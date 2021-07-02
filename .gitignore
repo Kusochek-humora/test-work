@@ -38,4 +38,4 @@ phpunit.phar
 .LSOverride
 .vs
 
-/dist/*
+
