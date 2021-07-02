@@ -7,7 +7,221 @@
     <div class="wrapper">
         <!--#include virtual="/templates/_header.html" -->
         <main class="content">
+            <h1 class="title">
+                Анкета
+            </h1>
+            <section class="personal">
+                <div class="container">
+                    <div class="personal__inner">
+                        <img src="./images/personal-logo.svg" alt="personal-logo" class="personal__inner-image">
 
+                        <h2 class="personal__inner-subtitle subtitle">
+                            Личная информация
+                        </h2>
+                        <form action="#" id="form" class="personal__form">
+                            <div class="personal__form-item">
+                                <input id="ipt1" type="text" class="personal__form-input" placeholder="ФИО" required>
+                                <label for="ipt1" class="personal__form-placeholder">
+                                    ФИО
+                                </label>
+
+                            </div>
+                            <div class="personal__form-item select-block">
+                                <div class="personal__select-template">
+                                    <span class="personal__select-placeholder">Год рождения</span>
+                                    <span class="personal__select-arrow "></span>
+                                    <span class="personal__select-value"></span>
+                                </div>
+                                <div class="personal__select-box">
+                                    <div class="personal__select-dropdown">
+                                        <div class="personal__select-option" data-value="none">Не выбрано</div>
+                                        <div class="personal__select-option" data-value="2001">2001</div>
+                                        <div class="personal__select-option" data-value="2000">2000</div>
+                                        <div class="personal__select-option" data-value="1999">1999</div>
+                                        <div class="personal__select-option" data-value="1998">1998</div>
+                                        <div class="personal__select-option" data-value="1997">1997</div>
+                                        <div class="personal__select-option" data-value="1996">1996</div>
+                                        <div class="personal__select-option" data-value="1995">1995</div>
+                                        <div class="personal__select-option" data-value="1994">1994</div>
+                                        <div class="personal__select-option" data-value="1993">1993</div>
+                                        <div class="personal__select-option" data-value="1992">1992</div>
+                                    </div>
+                                </div>
+                                <select id="select" name="select" class="personal__select" style="display: none;"
+                                    size="10">
+                                    <option value="1992">1992</option>
+                                    <option value="1993">1993</option>
+                                    <option value="1994">1994</option>
+                                    <option value="1995">1995</option>
+                                    <option value="1996">1996</option>
+                                    <option value="1997">1997</option>
+                                    <option value="1998">1998</option>
+                                    <option value="1999">1999</option>
+                                    <option value="2000">2000</option>
+                                    <option value="2001">2001</option>
+                                </select>
+                            </div>
+                            <div class="personal__form-item">
+                                <input id="ipt2" type="text" class="personal__form-input" placeholder="Место проживания"
+                                    required>
+                                <label for="ipt2" class="personal__form-placeholder">
+                                    Место проживания
+                                </label>
+                            </div>
+                            <div class="personal__form-item">
+                                <input id="ipt3" type="text" class="personal__form-input" placeholder="Skype" required>
+                                <label for="ipt3" class="personal__form-placeholder">
+                                    Skype
+                                </label>
+
+                            </div>
+                            <div class="personal__form-item">
+                                <input id="ipt4" type="text" class="personal__form-input" placeholder="E-mail" required>
+                                <label for="ipt4" class="personal__form-placeholder">
+                                    E-mail
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="experience">
+                <div class="container">
+                    <div class="experience__inner">
+                        <img src="./images/experience-logo.svg" alt="experience-logo" class="experience__inner-image">
+                        <h2 class="experience__inner-subtitle subtitle">
+                            Расскажите о своем опыте
+                        </h2>
+                        <div class="experience__radio">
+                            <div class="experience__radio-box">
+                                <div class="experience__radio-item">
+                                    <label class="experience__radio-label" for="radio1">
+                                        <span class="experience__radio-name"> БЭМ/OOCSS</span>
+                                        <input form="#form" id="radio1" type="checkbox" style="display: none;"
+                                            class="experience__radio-input">
+                                        <div class="experience__radio-template">
+
+                                        </div>
+                                    </label>
+                                    <label class="experience__radio-label" for="radio2">
+                                        <span class="experience__radio-name">Stylus/LESS/SASS </span>
+                                        <input form="#form" class="experience__radio-input" id="radio2" type="checkbox"
+                                            style="display: none;">
+                                        <div class="experience__radio-template">
+
+                                        </div>
+                                    </label>
+                                    <label class="experience__radio-label" for="radio3">
+                                        <span class="experience__radio-name">Работаю с SVG</span>
+                                        <input form="#form" class="experience__radio-input" id="radio3" type="checkbox"
+                                            style="display: none;">
+                                        <div class="experience__radio-template">
+
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="experience__radio-item">
+                                    <label class="experience__radio-label" for="radio4">
+                                        <span class="experience__radio-name"> Верстаю семантично</span>
+                                        <input form="#form" class="experience__radio-input" id="radio4" type="checkbox"
+                                            style="display: none;">
+                                        <div class="experience__radio-template">
+
+                                        </div>
+                                    </label>
+                                    <label class="experience__radio-label" for="radio5">
+                                        <span class="experience__radio-name"> ES2015/ES2016 </span>
+                                        <input form="#form" class="experience__radio-input" id="radio5" type="checkbox"
+                                            style="display: none;">
+                                        <div class="experience__radio-template">
+
+                                        </div>
+                                    </label>
+                                    <label class="experience__radio-label" for="radio6">
+                                        <span class="experience__radio-name"> Gulp/GRUNT</span>
+                                        <input form="#form" class="experience__radio-input" id="radio6" type="checkbox"
+                                            style="display: none;">
+                                        <div class="experience__radio-template">
+
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="experience__radio-item">
+                                    <label class="experience__radio-label" for="radio7">
+                                        <span class="experience__radio-name"> Webpack</span>
+                                        <input form="#form" class="experience__radio-input" id="radio7" type="checkbox"
+                                            style="display: none;">
+                                        <div class="experience__radio-template">
+
+                                        </div>
+                                    </label>
+                                    <label class="experience__radio-label" for="radio8">
+                                        <span class="experience__radio-name"> jQuery</span>
+                                        <input form="#form" class="experience__radio-input" id="radio8" type="checkbox"
+                                            style="display: none;">
+                                        <div class="experience__radio-template">
+
+                                        </div>
+                                    </label>
+                                    <label class="experience__radio-label" for="radio9">
+                                        <span class="experience__radio-name"> Ипользую Git</span>
+                                        <input form="#form" class="experience__radio-input" id="radio9" type="checkbox"
+                                            style="display: none;">
+                                        <div class="experience__radio-template">
+
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="javascript">
+                <div class="container">
+                    <div class="javascript__inner">
+                        <img src="./images/javascript-logo.svg" alt="javascript-logo" class="javascript__inner-image">
+                        <h2 class="javascript__inner-subtitle subtitle">
+                            Уровень владения JavaScript
+                        </h2>
+                        <div class="javascript__box">
+                            <ul class="javascript__marks">
+                                <li class="javascript__marks-item">Не владею</li>
+                                <li class="javascript__marks-item">Использую готовые<br> решения</li>
+                                <li class="javascript__marks-item">Использую готовые решения<br> и умею и переделывать
+                                </li>
+                                <li class="javascript__marks-item">Пишу сложный JS с нуля</li>
+                            </ul>
+                            <div class="javascript__range">
+
+                                <input type="range" class="javascript__range-line" min="0" max="100" value="15"
+                                    form="#form">
+                                <div class="javascript__range-active" style="width: 15%;">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="about">
+                <div class="container">
+                    <div class="about__inner">
+                        <img src="./images/about-logo.svg" alt="about-logo" class="about__inner-image">
+                        <h2 class="about__inner-subtitle subtitle">
+                            Расскажите о себе
+                        </h2>
+                        <p class="about__inner-text">Напишите несколько предложений, чем привлекла наша вакансия
+                            и что вы ожидаете от работы у нас.</p>
+                        <textarea class="about__inner-textarea" name="about" id="about-text" form="#form"
+                            placeholder="Понравилась тем, что..."></textarea>
+                    </div>
+                </div>
+            </section>
         </main>
         <!--#include virtual="/templates/_footer.html" -->
     </div>

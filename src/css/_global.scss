@@ -17,7 +17,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    color: #000;
+    color: $main-bl;
     position: relative;
 
     &.fixed {
@@ -41,7 +41,7 @@ h6 {
 a {
     display: inline-block;
     text-decoration: none;
-    color: #000;
+    color: inherit;
 }
 
 p {
@@ -82,16 +82,7 @@ svg {
 }
 
 .content {
-    max-width: 1040px;
-    width: 100%;
-    margin: 0 auto;
     flex: 1 0 auto;
-    background-color: #fff;
-
-    &__box {
-        max-width: 100%;
-        width: 100%;
-    }
 }
 
 .footer {
@@ -103,6 +94,56 @@ svg {
     width: 100%;
     padding: 0 15px 0;
     margin: 0 auto;
+}
+
+.title {
+    font-size: 70px;
+    font-weight: 100;
+    font-family: "Roboto", sans-serif;
+    line-height: normal;
+
+    text-align: center;
+    margin: 130px 0 75px;
+}
+
+.subtitle {
+    font-size: 30px;
+    line-height: normal;
+    font-weight: 300;
+
+    text-align: center;
+}
+
+.rotate-arrow {
+    transform: rotateZ(180deg);
+}
+
+.active-box {
+    display: block;
+}
+.personal__select-box{
+
+ 
+}
+
+
+.active-burger {
+    .header__burger-item:first-child {
+
+        width: 0;
+
+    }
+
+    .header__burger-item:nth-child(2) {
+        transform: rotateZ(45deg);
+        margin-bottom: -8.5px;
+    }
+
+    .header__burger-item:last-child {
+        margin-bottom: 0;
+
+        transform: rotateZ(-45deg);
+    }
 }
 
 // .container-fluid{

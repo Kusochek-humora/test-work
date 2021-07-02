@@ -1,3 +1,9 @@
 $main-bl: #1c1c1c;
 $grey:#c8c8c8;
 $blue: #435993;
+
+@mixin column-center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
